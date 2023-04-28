@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>simulado_prova</title>
+  </head>
+  <body>
+    <header>
+      <h1>Projeto Aplicações para Internet</h1>
+      <nav>
+        <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="sobre.html">Sobre</a></li>
+         <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <form>
+          <fieldset>
+            <legend>Informações pessoais</legend>
+            <label for="name">Nome:</label>
+            <input name="name" type="Text" />
+            <label type="email">Email:</label>
+            <input type="email" name="email" />
+            <label>Sexo:</label>
+            <div class="div-option">
+              <input type="radio" id="sexo" name="sexo" value="Masculino" />  
+              <label for="sexo">Masculino</label>
+            </div>
+            <div class="div-option">
+              <input type="radio" id="feminino" name="sexo" value="Feminino" />  
+              <label for="feminino">Feminino</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Informações de contato:</legend>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto">
+              <option value="Duvidas">Duvidas</option>
+              <option value="Comentatios">Comentatios</option>
+              <option value="Artigos">Artigos</option>
+            </select>
+            <label for="textarea">Mensagem:</label>
+            <textarea rows="10" name="textarea" cols="80"></textarea>
+            <label for="contato">Preferências de contato:</label>
+            <div class="div-option">
+              <input type="checkbox" id="contato1" name="contato1" value="Email" />
+              <label for="contato1"> Email</label>
+            </div>
+            <div class="div-option">
+              <input type="checkbox" id="contato2" name="contato2" value="Telefone" />
+              <label for="contato2">Telefone</label>
+            </div>
+          </fieldset>
+        </form>
+    </main>
+  </body>
+</html>
