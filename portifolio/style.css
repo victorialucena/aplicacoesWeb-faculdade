@@ -1,0 +1,63 @@
+body{
+ margin: 0;
+ box-sizing: border-box;
+}
+
+header, footer{
+ background-color: #7c56aa;
+ color: white;
+
+}
+
+h1{
+ margin: 0;
+ padding: 15px;
+ text-align: center;
+}
+
+main{
+ width: 800px;
+ margin: 0 auto;
+}
+
+li{
+ background: #7c56aa;
+ border-radius: 8px;
+ width: 90px;
+ font-weight: bold;
+ text-align: center;
+ padding: 10px;
+ color: white;
+ margin-bottom: 10px;
+}
+
+ul{
+ list-style: none;
+ display: grid;
+ grid-template-columns: 150px 150px;
+ padding: 0;
+}
+
+article{
+ width: 50%;
+}
+
+.imagemFicticia{
+ width: 200px;
+ height: 200px;
+}
+
+.containers{
+ display: flex;
+ flex-direction: row;
+ gap: 80px;
+ align-items: center;
+ padding: 20px;
+ justify-content: center;
+}
+
+.footerParagrafo{
+ margin: 0;
+ padding: 15px;
+ text-align: center;
+}
