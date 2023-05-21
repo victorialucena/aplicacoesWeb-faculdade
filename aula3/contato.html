@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas SD</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/512/cooking-book--v1.png">
+  </head>
+  <body>
+    <header>
+      <h1>Receitas SD: Simples e Diferente!</h1>
+      <img
+        src="https://www.welcomechef.com.br/imgs/blog/interna/1d6b4a1999027127f3f5f19bc87da2ff.jpg"
+      />
+      <nav>
+        <ul>
+          <a href="index.html"><li>Inicio</li></a>
+          <a href="receita.html"><li>Receita</li></a>
+          <a href="video.html"><li>Video</li></a>
+          <a href="contato.html"><li>Contato</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Informações sobre você e as receitas:</legend>
+          <label for="name"> Nome:</label>
+          <input autofocus required maxlength="20" type="text" name="name" />
+          <label for="senha">Senha:</label>
+          <input
+            required
+            pattern=".{8,}"
+            title="Apenas oito caracteres"
+            type="password"
+            name="senha"
+          />
+          <label for="email">Email:</label>
+          <input size="50px" required type="email" name="email" />
+          <label for="homepage">Qual page mais gostou?</label>
+          <input type="url" name="homepage" />
+          <label for="receitas">Qual tipo de receita você mais gosta?</label>
+          <input
+            type="checkbox"
+            id="receitas"
+            name="receitas"
+            value="Salgada"
+          />
+          Salgada
+          <input type="checkbox" id="receitas" name="receitas" value="Doce" />
+          Doce
+          <label for="torta">Selecione sua torta favorita:</label>
+          <input list="tortas" name="torta" />
+          <datalist id="tortas">
+            <option value="Torta de Frango"></option>
+            <option value="Torta de Frios"></option>
+            <option value="Torta de Calabresa"></option>
+            <option value="Torta Doce"></option>
+            <option value="Torta de Sardinha"></option>
+          </datalist>
+          <label for="arquivo">Envie uma foto da sua receita!</label>
+          <input required name="arquivo" type="file" />
+          <label for="nascionalidade"> Qual sua nascionalidade?</label>
+          <input type="radio" name="nascionalidade" value="Brasileiro" />
+          Brasileiro
+          <input type="radio" name="nascionalidade" value="Outro pais" /> Outro
+          Pais
+          <label for="regiao">Qual região você mora?</label>
+          <select name="regiao">
+            <option value="Sul">Sul</option>
+            <option value="Norte">Norte</option>
+            <option value="Nordeste">Nordeste</option>
+            <option value="Sudeste">Sudeste</option>
+          </select>
+          <label for="textinho">Faça um breve comentário!</label>
+          <textarea
+            name="textinho"
+            readonly
+            rows="5"
+            cols="30"
+            placeholder="seu texto aquii!!"
+          ></textarea>
+          <input name="oculto" type="hidden" value="invisivel" />
+          <input name="botao" type="button" value="Limpar" onclick="" />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>
+        21/04/23 - Victoria Lucena da Silva - RGM: 34709213 - Ciência da
+        Computação
+      </p>
+    </footer>
+  </body>
+</html>
